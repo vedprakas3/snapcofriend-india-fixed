@@ -105,9 +105,9 @@ fly secrets set MONGODB_URI=your_uri JWT_SECRET=your_secret
 4. Choose region: `Mumbai (ap-south-1)` for best performance in India
 5. Create a database user
 6. Add IP: `0.0.0.0/0` (Allow from anywhere)
-7. Get connection string:
+7. Get connection string from MongoDB Atlas dashboard (replace placeholders with your actual credentials):
    ```
-   mongodb+srv://username:password@cluster.mongodb.net/snapcofriend?retryWrites=true&w=majority
+   mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/snapcofriend?retryWrites=true&w=majority
    ```
 
 ---
@@ -178,8 +178,8 @@ PORT=5000
 NODE_ENV=production
 CLIENT_URL=https://your-frontend.vercel.app
 
-# Database (MongoDB Atlas - FREE)
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/snapcofriend?retryWrites=true&w=majority
+# Database (MongoDB Atlas - FREE) - Replace with your actual connection string
+MONGODB_URI=mongodb+srv://<YOUR_USERNAME>:<YOUR_PASSWORD>@<YOUR_CLUSTER>.mongodb.net/snapcofriend?retryWrites=true&w=majority
 
 # JWT
 JWT_SECRET=your-super-secret-jwt-key-min-32-characters-long
